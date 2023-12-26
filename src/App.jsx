@@ -5,10 +5,13 @@ import SignIn from './pages/signin'
 import SignUp from './pages/signUp'
 import Profile from './pages/Profile'
 import HousePrediction from './pages/HousePrediction'
+import Header from './components/Header'
 import React from 'react'
 import './app.css'
 function App() {
   return <BrowserRouter>
+  <Header/>
+
   <Routes>
 <Route path='/' element={<Home/>}></Route>
 <Route path='/sign-in' element={<SignIn/>}></Route>
